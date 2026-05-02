@@ -1,0 +1,117 @@
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit
+.streamlit/
+.streamlit/secrets.toml
+streamlit_cache/
+streamlit_cache2/
+.streamlit/streamlit_config.toml
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.sublime-project
+*.sublime-workspace
+*.pyc
+*.pyo
+*.lproj/
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# OS Files
+Thumbs.db
+.DS_Store
+*.bak
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data/Files (optional, uncomment to use)
+# data/
+# uploads/
+# downloads/
+
+# Credentials and sensitive files
+config/secrets.py
+credentials.json
+secrets.json
+
+# Application specific
+logs/
+uploads/
+downloads/
+cache/
+reports/
+processed_data/
+
+# Node (if using node tools)
+node_modules/
+package-lock.json
+yarn.lock
