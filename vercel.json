@@ -3,13 +3,20 @@
   "buildCommand": "pip install -r backend/requirements.txt",
   "installCommand": "pip install -r backend/requirements.txt",
   "devCommand": "uvicorn backend.main:app --port $PORT --host 0.0.0.0 --reload",
-  "framework": "vercel-python",
-  "env": {
-    "PYTHON_VERSION": "3.11"
-  },
+  "framework": "python",
   "build": {
     "env": {
       "PYTHON_VERSION": "3.11"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/index.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/public/$1"
+    }
+  ]
 }
