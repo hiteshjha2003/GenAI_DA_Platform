@@ -1,0 +1,11 @@
+[project]
+name = "dba-web-apps"
+version = "1.0.0"
+description = "GenAI Data Analytics Platform"
+requires-python = ">=3.11"
+
+[project.scripts]
+vercel-app = "main:app"
+
+[tool.vercel]
+app = "backend/main:app"
